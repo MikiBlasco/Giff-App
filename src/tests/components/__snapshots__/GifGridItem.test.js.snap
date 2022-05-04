@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`pruebas del componente <GifGridItem /> should shoe <GifGridItem /> correctly (matching with snapshot 1`] = `
+<div
+  className="card animate__animated animate__bounceIn"
+>
+  <img
+    alt="string1"
+    src="string2"
+  />
+  <p>
+     
+    string1
+     
+  </p>
+</div>
+`;

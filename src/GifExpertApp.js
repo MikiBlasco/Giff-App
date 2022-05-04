@@ -4,16 +4,10 @@ import AddCategory from './Components/AddCategory';
 import { GiffGrid } from './Components/GiffGrid';
 
 
-const GifExpertApp = () => {
+const GifExpertApp = ( { defaultCategories = [] } ) => {
 
-    const [categories, setCategories] = useState(['Dragon Ball']);
-
-    // const handleAdd = (e) => {
-
-    //     setCategories(['Doraemon', ...categories, ])
-
-    //     // setCategories( cats => [...cats, 'Doraemon'])
-    // }
+    //const [categories, setCategories] = useState(['Dragon Ball']);
+    const [categories, setCategories] = useState( defaultCategories );
 
     return(
         <>

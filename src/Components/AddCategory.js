@@ -8,10 +8,13 @@ const AddCategory = (props) => {
 
    const handleInputChange = (e) => {
        setInputValue(e.target.value)
+       
    }
 
    const handleSubmit = (e) => {
        e.preventDefault(); 
+
+       console.log('handleSubmit Up!', inputValue)
 
        //validation (trim para borrar espacios en blanco de de los lados)
        if ( inputValue.trim().length > 2 ) {
@@ -25,6 +28,7 @@ const AddCategory = (props) => {
     return (
 
         <form onSubmit={handleSubmit}>
+         <p> { inputValue } </p>
             <input 
                 type="text"
                 value={inputValue}
